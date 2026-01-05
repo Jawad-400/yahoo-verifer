@@ -1,0 +1,64 @@
+{
+  "valid_patterns": [
+    {
+      "pattern": "^[a-z]{4,15}$",
+      "score": 0.2,
+      "reason": "Simple username"
+    },
+    {
+      "pattern": "^[a-z]+\\.[a-z]+$",
+      "score": 0.3,
+      "reason": "First.Last format"
+    },
+    {
+      "pattern": "^[a-z]+[0-9]{1,3}$",
+      "score": 0.1,
+      "reason": "Name with few numbers"
+    }
+  ],
+  "invalid_patterns": [
+    {
+      "pattern": "^[0-9]{6,}$",
+      "score": -0.5,
+      "reason": "All numbers"
+    },
+    {
+      "pattern": "^test",
+      "score": -0.4,
+      "reason": "Test account"
+    },
+    {
+      "pattern": "^temp",
+      "score": -0.6,
+      "reason": "Temporary account"
+    },
+    {
+      "pattern": "^demo",
+      "score": -0.4,
+      "reason": "Demo account"
+    }
+  ],
+  "role_accounts": [
+    "admin",
+    "administrator",
+    "info",
+    "support",
+    "help",
+    "contact",
+    "sales",
+    "marketing",
+    "webmaster",
+    "postmaster"
+  ],
+  "common_usernames": [
+    "john",
+    "jane",
+    "mike",
+    "david",
+    "sarah",
+    "robert",
+    "linda",
+    "james",
+    "mary"
+  ]
+}
